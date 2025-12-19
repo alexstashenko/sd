@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИИ Совет Директоров - Вебинар 24 декабря</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 20px;
+            padding: 50px 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            color: #2d3748;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            color: #4a5568;
+            margin-bottom: 30px;
+        }
+        
+        .date-price {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border-left: 4px solid #667eea;
+        }
+        
+        .date-price p {
+            font-size: 1.1em;
+            margin: 5px 0;
+        }
+        
+        .date-price strong {
+            color: #667eea;
+        }
+        
+        .benefits {
+            margin: 30px 0;
+        }
+        
+        .benefits h2 {
+            font-size: 1.5em;
+            color: #2d3748;
+            margin-bottom: 20px;
+        }
+        
+        .benefits ul {
+            list-style: none;
+        }
+        
+        .benefits li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1.1em;
+        }
+        
+        .benefits li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+        
+        .cta-button {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin: 30px 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        
+        .for-whom {
+            background: #fff5f5;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border-left: 4px solid #fc8181;
+        }
+        
+        .for-whom h3 {
+            color: #c53030;
+            margin-bottom: 10px;
+        }
+        
+        .for-whom p {
+            color: #4a5568;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .subtitle {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Как создать свой ИИ Совет Директоров за 2 часа</h1>
+        
+        <p class="subtitle">Получай экспертные советы от 5 специалистов одновременно для любого решения в твоём бизнесе</p>
+        
+        <div class="date-price">
+            <p><strong>Дата:</strong> 24 декабря 2024, среда, 19:00 МСК</p>
+            <p><strong>Повтор:</strong> 27 декабря 2024, суббота, 11:00 МСК</p>
+            <p><strong>Цена:</strong> 2 500 ₽</p>
+            <p><strong>Формат:</strong> Онлайн + запись на 7 дней</p>
+        </div>
+        
+        <div class="benefits">
+            <h2>Что вы получите:</h2>
+            <ul>
+                <li>Технологию множественных экспертных перспектив</li>
+                <li>Шаблоны для создания своего первого совета</li>
+                <li>Живую демонстрацию работы Совета Директоров</li>
+                <li>Практику: создадите свой совет прямо на вебинаре</li>
+                <li>Запись вебинара на 7 дней</li>
+            </ul>
+        </div>
+        
+        <a href="#register" class="cta-button">Зарегистрироваться</a>
+        
+        <div class="for-whom">
+            <h3>Для кого этот вебинар:</h3>
+            <p>Предприниматели, коучи, консультанты и все, кто принимает важные решения и хочет получать множественные экспертные взгляды вместо одного "правильного" ответа.</p>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px; color: #718096;">
+            <p>Вопросы? Напишите мне: <strong>[ваш email]</strong></p>
+        </div>
+    </div>
+    
+    <script>
+        // Замените на вашу ссылку для регистрации
+        document.querySelector('.cta-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            // Вариант 1: Ссылка на форму Google Forms
+            // window.location.href = 'https://forms.google.com/ваша-форма';
+            
+            // Вариант 2: Ссылка на Tilda/другую платформу
+            // window.location.href = 'https://ваша-ссылка';
+            
+            // Вариант 3: Просто email (временно)
+            window.location.href = 'mailto:ваш-email@example.com?subject=Регистрация на вебинар 24 декабря';
+        });
+    </script>
+</body>
+</html>
