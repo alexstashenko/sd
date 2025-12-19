@@ -1,0 +1,7 @@
+# Локальная структура проекта (не пушим в GitHub Pages)
+README.md
+examples/
+framework/
+landing/
+skills/
+.vscode/
