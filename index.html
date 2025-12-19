@@ -12,153 +12,232 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            background: #fafafa;
+            color: #0a0a0a;
+            line-height: 1.5;
         }
         
         .container {
-            max-width: 700px;
-            margin: 40px auto;
-            background: white;
-            border-radius: 20px;
-            padding: 50px 40px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 120px 24px 80px;
+        }
+        
+        .label {
+            font-size: 13px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #666;
+            font-weight: 500;
+            margin-bottom: 24px;
         }
         
         h1 {
-            font-size: 2.5em;
-            color: #2d3748;
-            margin-bottom: 20px;
-            line-height: 1.2;
+            font-size: 56px;
+            font-weight: 600;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin-bottom: 24px;
+            color: #0a0a0a;
         }
         
         .subtitle {
-            font-size: 1.3em;
-            color: #4a5568;
-            margin-bottom: 30px;
+            font-size: 20px;
+            line-height: 1.6;
+            color: #525252;
+            margin-bottom: 64px;
+            font-weight: 400;
         }
         
-        .date-price {
-            background: #f7fafc;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 30px 0;
-            border-left: 4px solid #667eea;
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1px;
+            background: #e5e5e5;
+            border: 1px solid #e5e5e5;
+            margin-bottom: 80px;
         }
         
-        .date-price p {
-            font-size: 1.1em;
-            margin: 5px 0;
+        .info-item {
+            background: #fff;
+            padding: 24px;
         }
         
-        .date-price strong {
-            color: #667eea;
+        .info-item-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #999;
+            margin-bottom: 8px;
+            font-weight: 500;
         }
         
-        .benefits {
-            margin: 30px 0;
+        .info-item-value {
+            font-size: 16px;
+            color: #0a0a0a;
+            font-weight: 500;
         }
         
-        .benefits h2 {
-            font-size: 1.5em;
-            color: #2d3748;
-            margin-bottom: 20px;
+        .section {
+            margin-bottom: 80px;
         }
         
-        .benefits ul {
+        .section-title {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #0a0a0a;
+            margin-bottom: 32px;
+            font-weight: 600;
+        }
+        
+        .benefits-list {
             list-style: none;
         }
         
-        .benefits li {
-            padding: 12px 0;
-            padding-left: 30px;
-            position: relative;
-            font-size: 1.1em;
+        .benefits-list li {
+            padding: 20px 0;
+            border-bottom: 1px solid #e5e5e5;
+            font-size: 18px;
+            color: #0a0a0a;
+            transition: padding-left 0.2s ease;
         }
         
-        .benefits li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #667eea;
-            font-weight: bold;
-            font-size: 1.3em;
+        .benefits-list li:hover {
+            padding-left: 8px;
+        }
+        
+        .benefits-list li:last-child {
+            border-bottom: none;
         }
         
         .cta-button {
-            display: block;
-            width: 100%;
-            padding: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-align: center;
+            display: inline-block;
+            padding: 16px 48px;
+            background: #0a0a0a;
+            color: #fff;
             text-decoration: none;
-            border-radius: 10px;
-            font-size: 1.3em;
-            font-weight: bold;
-            margin: 30px 0;
-            transition: transform 0.2s, box-shadow 0.2s;
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            transition: all 0.2s ease;
             border: none;
             cursor: pointer;
         }
         
         .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            background: #2563eb;
+            transform: translateY(-1px);
+        }
+        
+        .cta-button:active {
+            transform: translateY(0);
         }
         
         .for-whom {
-            background: #fff5f5;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 30px 0;
-            border-left: 4px solid #fc8181;
+            padding: 32px;
+            background: #fff;
+            border-left: 2px solid #0a0a0a;
+            margin-bottom: 80px;
         }
         
-        .for-whom h3 {
-            color: #c53030;
-            margin-bottom: 10px;
+        .for-whom-title {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 16px;
+            font-weight: 600;
         }
         
-        .for-whom p {
-            color: #4a5568;
+        .for-whom-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #525252;
         }
         
-        @media (max-width: 600px) {
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid #e5e5e5;
+            color: #999;
+            font-size: 14px;
+        }
+        
+        .footer a {
+            color: #0a0a0a;
+            text-decoration: none;
+            border-bottom: 1px solid #e5e5e5;
+            transition: border-color 0.2s ease;
+        }
+        
+        .footer a:hover {
+            border-bottom-color: #0a0a0a;
+        }
+        
+        @media (max-width: 768px) {
             .container {
-                padding: 30px 20px;
+                padding: 80px 20px 60px;
             }
             
             h1 {
-                font-size: 1.8em;
+                font-size: 40px;
             }
             
             .subtitle {
-                font-size: 1.1em;
+                font-size: 18px;
+                margin-bottom: 48px;
+            }
+            
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section {
+                margin-bottom: 60px;
+            }
+            
+            .benefits-list li {
+                font-size: 16px;
+            }
+            
+            .for-whom {
+                padding: 24px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="label">Вебинар</div>
+        
         <h1>Как создать свой ИИ Совет Директоров за 2 часа</h1>
         
         <p class="subtitle">Получай экспертные советы от 5 специалистов одновременно для любого решения в твоём бизнесе</p>
         
-        <div class="date-price">
-            <p><strong>Дата:</strong> 24 декабря 2024, среда, 19:00 МСК</p>
-            <p><strong>Повтор:</strong> 27 декабря 2024, суббота, 11:00 МСК</p>
-            <p><strong>Цена:</strong> 2 500 ₽</p>
-            <p><strong>Формат:</strong> Онлайн + запись на 7 дней</p>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-item-label">Дата</div>
+                <div class="info-item-value">24 декабря, 19:00 МСК</div>
+            </div>
+            <div class="info-item">
+                <div class="info-item-label">Повтор</div>
+                <div class="info-item-value">27 декабря, 11:00 МСК</div>
+            </div>
+            <div class="info-item">
+                <div class="info-item-label">Цена</div>
+                <div class="info-item-value">2 500 ₽</div>
+            </div>
+            <div class="info-item">
+                <div class="info-item-label">Формат</div>
+                <div class="info-item-value">Онлайн + запись</div>
+            </div>
         </div>
         
-        <div class="benefits">
-            <h2>Что вы получите:</h2>
-            <ul>
+        <div class="section">
+            <div class="section-title">Что вы получите</div>
+            <ul class="benefits-list">
                 <li>Технологию множественных экспертных перспектив</li>
                 <li>Шаблоны для создания своего первого совета</li>
                 <li>Живую демонстрацию работы Совета Директоров</li>
@@ -169,28 +248,23 @@
         
         <a href="#register" class="cta-button">Зарегистрироваться</a>
         
-        <div class="for-whom">
-            <h3>Для кого этот вебинар:</h3>
-            <p>Предприниматели, коучи, консультанты и все, кто принимает важные решения и хочет получать множественные экспертные взгляды вместо одного "правильного" ответа.</p>
+        <div class="section" style="margin-top: 80px;">
+            <div class="for-whom">
+                <div class="for-whom-title">Для кого этот вебинар</div>
+                <p class="for-whom-text">Предприниматели, коучи, консультанты и все, кто принимает важные решения и хочет получать множественные экспертные взгляды вместо одного "правильного" ответа.</p>
+            </div>
         </div>
         
-        <div style="text-align: center; margin-top: 40px; color: #718096;">
-            <p>Вопросы? Напишите мне: <strong>[ваш email]</strong></p>
+        <div class="footer">
+            <p>Вопросы? Напишите мне: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
         </div>
     </div>
     
     <script>
-        // Замените на вашу ссылку для регистрации
         document.querySelector('.cta-button').addEventListener('click', function(e) {
             e.preventDefault();
-            // Вариант 1: Ссылка на форму Google Forms
-            // window.location.href = 'https://forms.google.com/ваша-форма';
-            
-            // Вариант 2: Ссылка на Tilda/другую платформу
-            // window.location.href = 'https://ваша-ссылка';
-            
-            // Вариант 3: Просто email (временно)
-            window.location.href = 'mailto:ваш-email@example.com?subject=Регистрация на вебинар 24 декабря';
+            // Замените на вашу ссылку для регистрации
+            window.location.href = 'mailto:your-email@example.com?subject=Регистрация на вебинар 24 декабря';
         });
     </script>
 </body>
